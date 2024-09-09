@@ -10,7 +10,7 @@ The purpose of this file is to provide basic overview, setup, usage and other in
 
 | | |
 -- | --
-**Title** | WEB-программирование
+**Title** | WEB-программирование_вечерники
 **Url** | https://e-learn.petrocollege.ru/course/view.php?id=6974
 **Released** |
 **Authors** | Евладов Андрей Анатольевич
