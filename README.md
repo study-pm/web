@@ -3,15 +3,6 @@
 
 ## Overview
 
-| | |
--- | --
-**URL** | https://e-learn.petrocollege.ru/course/view.php?id=6974
-**Author** | Евладов Андрей Анатольевич
-**Publisher** | Петровский колледж
-
-
-## Overview
-
 ### About this file
 The purpose of this file is to provide basic overview, setup, usage and other instructions as well as the general background information about the project.
 
