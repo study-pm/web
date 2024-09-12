@@ -1,7 +1,7 @@
 <link href="styles.css" rel="stylesheet" />
 
 # WEB-программирование
-65ca0f4ad048d37352720fb8
+[65ca0f4ad048d37352720fb8](https://e-learn.petrocollege.ru/course/view.php?id=6974)
 
 - [Общее](#общее)
   - [Правила оформления работ](#правила-оформления-работ)
