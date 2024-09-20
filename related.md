@@ -10,3 +10,4 @@
 - [ ] [HTML-текст](https://html5book.ru/html-text/)
 - [ ] [HTML-списки](https://html5book.ru/html-lists/)
 - [ ] [HTML-ссылки](https://html5book.ru/hyperlinks-in-html/)
+- [ ] [Абсолютные и относительные ссылки](https://htmlbook.ru/samhtml/ssylki/absolyutnye-i-otnositelnye-ssylki)
