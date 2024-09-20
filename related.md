@@ -8,3 +8,4 @@
 - [ ] [Htmlbook](https://htmlbook.ru/)
 - [ ] [Ссылка на бесплатный онлайн курс по основам верстки: Веб-разработка для начинающих: HTML и CSS](https://stepik.org/course/38218/promo)
 - [ ] [HTML-текст](https://html5book.ru/html-text/)
+- [ ] [HTML-списки](https://html5book.ru/html-lists/)
