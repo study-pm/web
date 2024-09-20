@@ -90,6 +90,7 @@
   - [HTML-списки](#html-списки)
   - [Задание 2. Списки](#задание-2-списки)
   - [HTML-ссылки](#html-ссылки-1)
+  - [Относительные и абсолютные ссылки](#относительные-и-абсолютные-ссылки)
 
 ## Общее
 65ca1025d048d37352720fb9
@@ -2663,3 +2664,8 @@ _Например_:
 [66ed32fdd048d37352722246](https://e-learn.petrocollege.ru/mod/url/view.php?id=325562)
 
 Нажмите на ссылку https://html5book.ru/hyperlinks-in-html/, чтобы открыть ресурс.
+
+### Относительные и абсолютные ссылки
+[66ed33d8d048d37352722248](https://e-learn.petrocollege.ru/mod/url/view.php?id=325563)
+
+Redirect to https://htmlbook.ru/samhtml/ssylki/absolyutnye-i-otnositelnye-ssylki.
