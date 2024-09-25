@@ -98,6 +98,7 @@
     - [Тег `<area>`](#тег-area)
     - [Атрибуты тега `<area>`](#атрибуты-тега-area)
     - [Атрибут `coords`](#атрибут-coords)
+  - [Задание 3. Ссылки](#задание-3-ссылки)
 
 ## Общее
 65ca1025d048d37352720fb9
@@ -2772,3 +2773,10 @@ https://htmlbook.ru/samhtml/ssylki/absolyutnye-i-otnositelnye-ssylki.
     href="../wormik/knob.html" alt="Координаты">
 </map>
 ```
+
+### Задание 3. Ссылки
+66ed83afd048d37352722256
+
+Необходимо выполнить 2 задания.
+
+https://e-learn.petrocollege.ru/pluginfile.php/490209/mod_assign/introattachment/0/3.%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8_%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5.rar?forcedownload=1
