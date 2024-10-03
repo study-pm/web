@@ -13,3 +13,5 @@
 - [ ] [Абсолютные и относительные ссылки](https://htmlbook.ru/samhtml/ssylki/absolyutnye-i-otnositelnye-ssylki)
 - [ ] [Курс SaintCode bootcamp (массивы + циклы)](https://www.youtube.com/watch?v=rCVacPRIzH4)
 - [ ] [HTML Academy](https://htmlacademy.ru/courses/305/run/5)
+- [ ] [Table (Doka guide)](https://doka.guide/html/tables/)
+- [ ] [HTML-таблицы](https://html5book.ru/html-table/)

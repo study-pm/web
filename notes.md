@@ -2842,6 +2842,9 @@ https://e-learn.petrocollege.ru/pluginfile.php/490209/mod_assign/introattachment
 ## Таблицы и формы
 66f4f6bc5040133e8429e212
 
+- [Table (Doka guide)](https://doka.guide/html/tables/)
+- [HTML-таблицы](https://html5book.ru/html-table/)
+
 ### Основные данные по таблицам
 [66fe828d5040133e8429e2e2](https://wywiwyg.ru/learn_web/WD/first_semester/lecture-table/?page=1)
 
