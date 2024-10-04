@@ -116,6 +116,7 @@
       - [`<tfoot>`](#tfoot)
       - [`<caption>`](#caption)
     - [Атрибуты](#атрибуты-1)
+  - [Задание 5. Создание таблиц](#задание-5-создание-таблиц)
 
 ## Общее
 65ca1025d048d37352720fb9
@@ -3733,3 +3734,8 @@ https://e-learn.petrocollege.ru/pluginfile.php/490209/mod_assign/introattachment
 </td>
 </tr>
 </table>
+
+### Задание 5. Создание таблиц
+[66fe9de35040133e8429e2e5](https://e-learn.petrocollege.ru/mod/assign/view.php?id=325572)
+
+Создать одну из предложенных таблиц — на выбор студента (студентки)
