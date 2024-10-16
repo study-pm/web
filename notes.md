@@ -117,6 +117,73 @@
       - [`<caption>`](#caption)
     - [Атрибуты](#атрибуты-1)
   - [Задание 5. Создание таблиц](#задание-5-создание-таблиц)
+  - [Основные данные по формам](#основные-данные-по-формам)
+    - [Элемент `<form>`](#элемент-form)
+    - [Атрибуты формы](#атрибуты-формы)
+      - [Атрибут Action](#атрибут-action)
+      - [Целевой атрибут](#целевой-атрибут)
+      - [Атрибут метода](#атрибут-метода)
+      - [Когда использовать GET?](#когда-использовать-get)
+      - [Когда использовать POST?](#когда-использовать-post)
+      - [Атрибут Name](#атрибут-name)
+    - [Элементы формы](#элементы-формы)
+      - [Группирование данных формы с помощью `<fieldset>`](#группирование-данных-формы-с-помощью-fieldset)
+      - [Элемент `<input>`](#элемент-input)
+        - [Поле ввода текста](#поле-ввода-текста)
+        - [Поле пароля](#поле-пароля)
+        - [Переключатель (радиокнопка)](#переключатель-радиокнопка)
+        - [Флажок](#флажок)
+        - [Кнопка отправки](#кнопка-отправки)
+        - [Кнопка сброса](#кнопка-сброса)
+        - [Обычная кнопка](#обычная-кнопка)
+        - [Типы входных данных HTML5](#типы-входных-данных-html5)
+        - [Поле цвета](#поле-цвета)
+        - [Поле даты](#поле-даты)
+        - [Ограничения даты](#ограничения-даты)
+        - [Поле локальной временной метки](#поле-локальной-временной-метки)
+        - [Поле месяца](#поле-месяца)
+        - [Поле недели](#поле-недели)
+        - [Поле времени](#поле-времени)
+        - [Поле электронной почты](#поле-электронной-почты)
+        - [Числовое поле](#числовое-поле)
+        - [Ввод диапазона](#ввод-диапазона)
+        - [Поле поиска](#поле-поиска)
+        - [Поле номера телефона](#поле-номера-телефона)
+        - [Поле URL-адреса](#поле-url-адреса)
+        - [Ограничения ввода](#ограничения-ввода)
+      - [Элемент `<select>`](#элемент-select)
+        - [Выбор значения](#выбор-значения)
+        - [Видимые значения](#видимые-значения)
+        - [Разрешить множественный выбор](#разрешить-множественный-выбор)
+      - [Элемент `<textarea>`](#элемент-textarea)
+      - [Элемент `<button>`](#элемент-button)
+      - [Элементы формы HTML5](#элементы-формы-html5)
+        - [HTML5 `<datalist>` элемент](#html5-datalist-элемент)
+        - [HTML5 `<output>` элемент](#html5-output-элемент)
+    - [Атрибуты элементов формы](#атрибуты-элементов-формы)
+      - [Атрибут `value`](#атрибут-value)
+      - [Атрибут `readonly`](#атрибут-readonly)
+      - [Атрибут `disabled`](#атрибут-disabled)
+      - [Атрибут `size`](#атрибут-size)
+      - [Атрибут `maxlength`](#атрибут-maxlength)
+    - [Атрибуты HTML5](#атрибуты-html5)
+      - [Атрибут автозаполнения](#атрибут-автозаполнения)
+      - [Атрибут `novalidate`](#атрибут-novalidate)
+      - [Атрибут автофокусировки](#атрибут-автофокусировки)
+      - [Атрибут формы](#атрибут-формы)
+      - [Атрибут `formaction`](#атрибут-formaction)
+      - [Атрибут `formenctype`](#атрибут-formenctype)
+      - [Атрибут `formmethod`](#атрибут-formmethod)
+      - [Атрибут `formnovalidate`](#атрибут-formnovalidate)
+      - [Атрибут `formtarget`](#атрибут-formtarget)
+      - [Атрибуты Height и Width](#атрибуты-height-и-width)
+      - [Атрибут List](#атрибут-list)
+      - [Атрибуты Min и Max](#атрибуты-min-и-max)
+      - [Множественный атрибут](#множественный-атрибут)
+      - [Атрибут `pattern`](#атрибут-pattern)
+      - [Атрибут заполнителя](#атрибут-заполнителя)
+      - [Обязательный атрибут](#обязательный-атрибут)
+      - [Атрибут `step`](#атрибут-step)
 
 ## Общее
 65ca1025d048d37352720fb9
@@ -3739,3 +3806,2797 @@ https://e-learn.petrocollege.ru/pluginfile.php/490209/mod_assign/introattachment
 [66fe9de35040133e8429e2e5](https://e-learn.petrocollege.ru/mod/assign/view.php?id=325572)
 
 Создать одну из предложенных таблиц — на выбор студента (студентки)
+
+### Основные данные по формам
+[670042c15040133e8429e320](https://wywiwyg.ru/learn_web/WD/first_semester/lecture-form/?page=1)
+
+![](./img/form-example.jpg)
+
+#### Элемент `<form>`
+Элемент HTML `<form>` определяет форму, которая используется для сбора данных пользователя:
+```html
+<form>
+.
+form elements
+.
+</form>
+```
+
+HTML-форма содержит **элементы формы**.
+
+<dfn title="элемент формы">Элементы формы</dfn> представляют собой различные типы входных элементов, такие как текстовые поля, флажки, переключатели, кнопки отправки и многое другое.
+
+#### Атрибуты формы
+
+| Attribute | Вescription |
+| --- | --- |
+| `accept-charset` | Задает кодировку, используемую в отправленной форме (по умолчанию: кодировка страницы)
+| `action` | Указывает адрес (URL) для отправки формы (по умолчанию: страница отправки)
+| `autocomplete` | Указывает, должен ли обозреватель производить автоматическое заполнение формы (по умолчанию: `on`)
+| `enctype` | Задает кодировку отправленных данных (по умолчанию: URL-кодировка, только для `method="post"` |
+| `method` | Указывает метод HTTP, используемый при отправке формы (по умолчанию: GET)
+| `name` | Задает имя, используемое для идентификации формы (для использования DOM: Document.Forms.Name)
+| `novalidate` | Указывает, что обозреватель не должен проверять форму
+| `target` | Указывает целевой объект адреса в атрибуте Action (по умолчанию: `_self`)
+
+##### Атрибут Action
+Атрибут `action` определяет действие, выполняемое при отправке формы.
+
+Обычно данные формы отправляются на веб-страницу на сервере, когда пользователь щелкает кнопку Submit.
+
+В приведенном выше примере данные формы отправляются на страницу на сервере под названием "/action_page.php". Эта страница содержит сценарий на стороне сервера, обрабатывающий данные формы:
+
+```html
+<form action="/action_page.php">
+```
+
+Если атрибут `action` опущен, действие устанавливается на текущую страницу.
+
+##### Целевой атрибут
+Атрибут `target` указывает, будет ли отправленный результат открыт в новой вкладе обозревателя, фрейме или в текущем окне.
+
+По умолчанию используется значение "`_self`", означающее, что форма будет отправлена в текущем окне.
+
+Чтобы сделать результат формы открытым в новой вкладке обозревателя, используйте значение "`_blank`".
+
+!!! example Пример
+
+```html
+<form action="/action_page.php" target="_blank">
+```
+
+##### Атрибут метода
+`method` атрибут указывает метод HTTP (**GET** или **POST**) для использования при отправке данных формы:
+
+!!! example Пример
+
+```html
+<form action="/action_page.php" method="get">
+```
+
+!!! example Пример
+
+```html
+<form action="/action_page.php" method="post">
+```
+
+##### Когда использовать GET?
+Метод по умолчанию при отправке данных формы GET.
+
+Однако при использовании Get отправленные данные формы будут **видны в адресном поле страницы**:
+
+```
+/action_page.php?firstname="Mickey"&lastname="Mouse"
+```
+
+**Заметки о GET**:
+- Добавление данных формы в URL-адрес в парах "имя/значение"
+- Длина URL ограничена (около 3000 символов)
+- Никогда не используйте Get для отправки конфиденциальных данных! (будет отображаться в URL)
+- Полезно для представлений форм, где пользователь хочет зафиксировать параметры запроса для повторного использования (как закладку)
+- Get лучше для незащищенных данных, таких как строки запроса в Google
+
+##### Когда использовать POST?
+Всегда используйте POST, если данные формы содержат конфиденциальную или личную информацию. Метод POST не отображает отправленные данные формы в адресном поле страницы.
+
+**Заметки о POST**:
+- POST не имеет ограничений по размеру и может использоваться для отправки больших объемов данных.
+- Данные форм с POST не могут быть зафиксированы и использованы в качестве закладок
+
+##### Атрибут Name
+Каждое поле ввода должно иметь атрибут `name` для отправки.
+
+Если атрибут `name` опущен, данные этого поля ввода не будут отправлены вообще.
+
+В этом примере будет передаваться только поле ввода "Фамилия":
+
+!!! example Пример
+
+```html
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br>
+    <input type="submit" value="Submit">
+</form>
+```
+
+#### Элементы формы
+
+| Тег          | Описание                                                   |
+| ------------ | ---------------------------------------------------------- |
+| `<form>`     | Определяет HTML-форму для ввода данных пользователем
+| `<input>`    | Определяет элемент управления вводом
+| `<textarea>` | Определяет многострочный элемент управления вводом (область текста)
+| `<label>`    | Определяет метку для элемента `<input>`
+| `<fieldset>` | Группирует связанные элементы в форме
+| `<legend>`   | Определяет заголовок для `<fieldset>` элемента
+| `<select>`   | Определяет раскрывающийся список
+| `<optgroup>` | Определяет группу связанных параметров в раскрывающемся списке
+| `<option>`   | Определяет параметр в раскрывающемся списке
+| `<button>`   | Определяет нажатую кнопку
+| `<datalist>` | `*`Определяет список предварительно заданных параметров для элементов управления вводом
+| `<output>`   | `*`Определяет результат вычисления
+
+`*` — новый в HTML5.
+
+##### Группирование данных формы с помощью `<fieldset>`
+Элемент `<fieldset>` используется для группирования связанных данных в форме.
+
+Элемент `<legend>` определяет заголовок для элемента `<fieldset>`.
+
+!!! example Пример
+
+```html
+<form action="/action_page.php">
+    <fieldset>
+        <legend>Personal information:</legend>
+        First name:<br>
+        <input type="text" value="Mickey"><br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse"><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="/action_page.php">
+    <fieldset>
+        <legend>Personal information:</legend>
+        First name:<br>
+        <input type="text" value="Mickey"><br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse"><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+</details>
+
+##### Элемент `<input>`
+Элемент `<input>` является наиболее важным элементом формы.
+
+`<input>` элемент может отображаться несколькими способами в зависимости от атрибута **`Type`**.
+
+!!! example Пример
+
+```html
+<input name="firstname" type="text">
+```
+
+Вот несколько примеров:
+
+| Тип | Описание |
+-- | --
+`<input type="text">` | Определяет однострочное текстовое поле ввода
+`<input type="radio">` | Определяет переключатель (для выбора одного из множества вариантов)
+`<input type="submit">` | Определяет кнопку отправки (для отправки формы)
+
+> Если атрибут `type` опущен, поле ввода получает тип по умолчанию: "Text".
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The input Element</h2>
+
+<form action="/action_page.php">
+    Enter your name
+    <input name="firstname" type="text">
+    <br><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The input Element</h2>
+
+<form action="/action_page.php">
+    Enter your name
+    <input name="firstname" type="text">
+    <br><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Поле ввода текста
+
+`<input type="text">` определяет **однострочное текстовое поле ввода**:
+
+!!! example Пример
+
+```html
+<form>
+    First name:<br>
+    <input type="text" name="firstname"><br>
+    Last name:<br>
+    <input type="text" name="lastname"><br>
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form>
+    First name:<br>
+    <input type="text" name="firstname"><br>
+    Last name:<br>
+    <input type="text" name="lastname"><br>
+</form>
+
+</details>
+
+> **Примечание**: Сама форма не видна. Также обратите внимание, что ширина текстового поля по умолчанию составляет 20 символов.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Text field</h2>
+<p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
+
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+    <br><br>
+    <input type="submit">
+</form>
+
+<p>Note that the form itself is not visible.<p>
+<p>Also note the the default width of a text field is 20 characters.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Text field</h2>
+<p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
+
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+    <br><br>
+    <input type="submit">
+</form>
+
+<p>Note that the form itself is not visible.<p>
+<p>Also note the the default width of a text field is 20 characters.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Поле пароля
+`<input type="password">` определяет **поле пароля**:
+
+!!! example Пример
+
+```html
+<form>
+    User name:<br>
+    <input type="text" name="firstname"><br>
+    User password:<br>
+    <input type="password" name="psw"><br>
+</form>
+```
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Password field</h2>
+<p>The <strong>input type="password"</strong> defines a password field:</p>
+
+<form action="/action_page.php">
+    User name:<br>
+    <input type="text" name="userid">
+    <br>
+    User password:<br>
+    <input type="password" name="psw">
+</form>
+
+<p>The characters in a password field are masked (shown as asterisks or circles).<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Password field</h2>
+<p>The <strong>input type="password"</strong> defines a password field:</p>
+
+<form action="/action_page.php">
+    User name:<br>
+    <input type="text" name="userid">
+    <br>
+    User password:<br>
+    <input type="password" name="psw">
+</form>
+
+<p>The characters in a password field are masked (shown as asterisks or circles).<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Переключатель (радиокнопка)
+`<input type="radio">` определяет **переключатель**.
+
+Переключатели позволяют пользователю выбрать один из ограниченного числа вариантов:
+
+!!! example Пример
+
+```html
+<form>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br>
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br>
+</form>
+
+</details>
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Radio buttons</h2>
+<p>The <strong>input type="radio"</strong> defines a radio button:</p>
+
+<form action="/action_page.php">
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Radio buttons</h2>
+<p>The <strong>input type="radio"</strong> defines a radio button:</p>
+
+<form action="/action_page.php">
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+
+###### Флажок
+`<input type="checkbox">` определяет **CheckBox**.
+
+Флажки позволяют пользователю выбирать ноль или более из ограниченного числа вариантов.
+
+!!! example Пример
+
+```html
+<form>
+    <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+    <input type="checkbox" name="vehicle2" value="Car"> I have a car
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form>
+    <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+    <input type="checkbox" name="vehicle2" value="Car"> I have a car
+</form>
+
+</details>
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/action_page.php">
+    <input type="checkbox" name="vehicle1" value="Bike" checked> I have a bike<br>
+    <input type="checkbox" name="vehicle2" value="Car"> I have a car<br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Checkboxes</h2>
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+<form action="/action_page.php">
+    <input type="checkbox" name="vehicle1" value="Bike" checked> I have a bike<br>
+    <input type="checkbox" name="vehicle2" value="Car"> I have a car<br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Кнопка отправки
+`<input type="submit">` определяет кнопку для **отправки** данных формы в **обработчик форм**.
+
+Обработчик форм обычно является серверной страницей со сценарием для обработки входных данных.
+
+Обработчик форм задается в атрибуте **`Action`** формы:
+
+!!! example Пример
+
+```html
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br>
+    <input type="submit" value="Submit">
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br>
+    <input type="submit" value="Submit">
+</form>
+
+</details>
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Submit button</h2>
+<p>The <strong>input type="submit"</strong> defines a button for submitting form data to a form-handler:</p>
+
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<p>If you click "Submit", the form-data will be sent to a page called "/action_page.php".<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Submit button</h2>
+<p>The <strong>input type="submit"</strong> defines a button for submitting form data to a form-handler:</p>
+
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<p>If you click "Submit", the form-data will be sent to a page called "/action_page.php".<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Кнопка сброса
+`<input type="rest">` определяет **кнопку сброса**, которая сбрасывает все значения формы в значения по умолчанию:
+
+!!! example Пример
+
+```html
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+</form>
+
+</details>
+
+> При изменении входных значений и нажатии кнопки "Сброс" данные формы будут сброшены на значения по умолчанию.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Reset button</h2>
+<p>The <strong>input type="reset"</strong> defines a reset button that will reset all form values to their default values:</p>
+
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+</form>
+
+<p>If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Reset button</h2>
+<p>The <strong>input type="reset"</strong> defines a reset button that will reset all form values to their default values:</p>
+
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+</form>
+
+<p>If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Обычная кнопка
+`<input type="button">` определяет **кнопку**:
+
+!!! example Пример
+
+```html
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+</details>
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Input button</h2>
+
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Input button</h2>
+
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Типы входных данных HTML5
+HTML5 добавил несколько новых типов ввода:
+
+- `color`
+- `date`
+- `datetime-local`
+- `email`
+- `month`
+- `number`
+- `range`
+- `search`
+- `tel`
+- `time`
+- `url`
+- `week`
+
+> Новые типы ввода, которые не поддерживаются старыми веб-обозревателями, будут вести себя как `<input type="text">`.
+
+###### Поле цвета
+`<input type="color">` используется для полей ввода, которые должны содержать цвет.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Color Picker</h2>
+<p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+<p>Depending on browser support:<br>A color picker can pop-up when enter the input field</p>
+
+<form action="/action_page.php">
+    Select your favorite color:<br>
+    <input type="color" name="favcolor" value="#ff0000">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="color" is not supported in Internet Explorer 11 and earlier versions or Safari 9.1. and earlier.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Color Picker</h2>
+<p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+<p>Depending on browser support:<br>A color picker can pop-up when enter the input field.</p>
+
+<form action="/action_page.php">
+    Select your favorite color:<br>
+    <input type="color" name="favcolor" value="#ff0000">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="color" is not supported in Internet Explorer 11 and earlier versions or Safari 9.1. and earlier.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Поле даты
+`<input type="date">` используется для полей ввода, которые должны содержать дату.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Date Field</h2>
+<p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+<p>Depending on browser support:<br>A date picker can pop-up when enter the input field.</p>
+
+<form action="/action_page.php">
+    Birthday:<br>
+    <input type="date" name="bday">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="date" is not supported in Internet Explorer 11 and earlier versions.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Date Field</h2>
+<p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+<p>Depending on browser support:<br>A date picker can pop-up when enter the input field.</p>
+
+<form action="/action_page.php">
+    Birthday:<br>
+    <input type="date" name="bday">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="date" is not supported in Internet Explorer 11 and earlier versions.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Ограничения даты
+Также можно использовать атрибуты `min` и `max` для добавления ограничений на диапазон вводимых значений.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Date Field Restrictions</h2>
+<p>Use the min and max attributes to add restrictions to dates:</p>
+
+<form action="/action_page.php">
+    Enter a date before 1980-01-01:<br>
+    <input type="date" name="bday" max="1979-12-31"><br><br>
+    Enter a date after 2000-01-01:<br>
+    <input type="date" name="bday" min="2000-01-02"><br><br>
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="date" is not supported in Internet Explorer 11 and earlier versions.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Date Field Restrictions</h2>
+<p>Use the min and max attributes to add restrictions to dates:</p>
+
+<form action="/action_page.php">
+    Enter a date before 1980-01-01:<br>
+    <input type="date" name="bday" max="1979-12-31"><br><br>
+    Enter a date after 2000-01-01:<br>
+    <input type="date" name="bday" min="2000-01-02"><br><br>
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="date" is not supported in Internet Explorer 11 and earlier versions.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Поле локальной временной метки
+`<input type="datetime-local">` используется для задания даты и времени без временной зоны.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Local Date Field</h2>
+<p>The <strong>input type="datetime-local"</strong> specifies a date and time input field, with no time zone.</p>
+<p>Depending on browser support:<br>A date picker can pop-up when enter the input field.</p>
+
+<form action="/action_page.php">
+    Birthday (date and time):<br>
+    <input type="datetime-local" name="bdaytime">
+    <input type="submit" value="Send">
+</form>
+
+<p><b>Note:</b> type="datetime-local" is not supported in Firefox, or Internet Explorer 12 and earlier versions.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Local Date Field</h2>
+<p>The <strong>input type="datetime-local"</strong> specifies a date and time input field, with no time zone.</p>
+<p>Depending on browser support:<br>A date picker can pop-up when enter the input field.</p>
+
+<form action="/action_page.php">
+    Birthday (date and time):<br>
+    <input type="datetime-local" name="bdaytime">
+    <input type="submit" value="Send">
+</form>
+
+<p><b>Note:</b> type="datetime-local" is not supported in Firefox, or Internet Explorer 12 and earlier versions.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Поле месяца
+`<input type="month">` позволяет пользователю выбрать месяц и год.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Month Field</h2>
+<p>The <strong>input type="month"</strong> allows the user to select a month and year.</p>
+<p>Depending on browser support:<br>A date picker can pop-up when enter the input field.</p>
+
+<form action="/action_page.php">
+    Birthday (month and year):<br>
+    <input type="month" name="bdaymonth">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="month" is not supported in Firefox, or Internet Explorer 11 and earlier versions.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Month Field</h2>
+<p>The <strong>input type="month"</strong> allows the user to select a month and year.</p>
+<p>Depending on browser support:<br>A date picker can pop-up when you enter the input field.</p>
+
+<form action="/action_page.php">
+    Birthday (month and year):<br>
+    <input type="month" name="bdaymonth">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="month" is not supported in Firefox, or Internet Explorer 11 and earlier versions.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Поле недели
+`<input type="week">` позволяет пользователю выбрать неделю и год.
+
+В зависимости от поддержки обозревателя в поле ввода может отображаться выбор даты.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Week Field</h2>
+<p>The <strong>input type="week"</strong> allows the user to select a week and year.</p>
+<p>Depending on browser support:<br>A date picker can pop-up when you enter the input field.</p>
+
+<form action="/action_page.php">
+    Select a week:<br>
+    <input type="week" name="year_week">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="month" is not supported in Firefox, or Internet Explorer 11 and earlier versions.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Week Field</h2>
+<p>The <strong>input type="week"</strong> allows the user to select a week and year.</p>
+<p>Depending on browser support:<br>A date picker can pop-up when you enter the input field.</p>
+
+<form action="/action_page.php">
+    Select a week:<br>
+    <input type="week" name="year_week">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="month" is not supported in Firefox, or Internet Explorer 11 and earlier versions.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Поле времени
+`<input type="time">` позволяет пользователю выбрать время (без часового пояса).
+
+В зависимости от поддержки обозревателя в поле ввода может отображаться средство выбора времени.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Time Field</h2>
+<p>The <strong>input type="time"</strong> allows the user to select a time (no time zone).</p>
+<p>Depending on browser support:<br>A time picker can pop-up when you enter the input field.</p>
+
+<form action="/action_page.php">
+    Select a time:
+    <input type="time" name="usr_time">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="time" is not supported in Internet Explorer 12 and earlier versions.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Time Field</h2>
+<p>The <strong>input type="time"</strong> allows the user to select a time (no time zone).</p>
+<p>Depending on browser support:<br>A time picker can pop-up when you enter the input field.</p>
+
+<form action="/action_page.php">
+    Select a time:
+    <input type="time" name="usr_time">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="time" is not supported in Internet Explorer 12 and earlier versions.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Поле электронной почты
+`<input type="email">` используется для полей ввода, которые должны содержать адрес электронной почты.
+
+В зависимости от поддержки браузеров адреса электронной почты могут автоматически проверяться при отправке.
+
+Некоторые смартфоны, распознающие данный тип ввода, могут автоматически добавлять на экранную клавиатуру фрагмент ".com" в виде кнопки для упрощения ввода электронного адреса.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Email Field</h2>
+<p>The <strong>input type="email"</strong> is used for input fields that should contain an e-mail address:</p>
+
+<form action="/action_page.php">
+    E-mail:<br>
+    <input type="email" name="email">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="email" is not supported in IE9 and earlier.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Email Field</h2>
+<p>The <strong>input type="email"</strong> is used for input fields that should contain an e-mail address:</p>
+
+<form action="/action_page.php">
+    E-mail:<br>
+    <input type="email" name="email">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="email" is not supported in IE9 and earlier.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Числовое поле
+`<input type="number">` определяет **числовое** поле ввода.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Number Field</h2>
+<p>The <strong>input type="number"</strong> defines a numeric input field.</p>
+<p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
+
+<form action="/action_page.php">
+    Quantity (between 1 and 5):<br>
+    <input type="number" name="quantity" min="1" max="5">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="number" is not supported in IE9 and earlier.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Number Field</h2>
+<p>The <strong>input type="number"</strong> defines a numeric input field.</p>
+<p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
+
+<form action="/action_page.php">
+    Quantity (between 1 and 5):<br>
+    <input type="number" name="quantity" min="1" max="5">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="number" is not supported in IE9 and earlier.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Ввод диапазона
+`<input type="range">` определяет элемент управления для ввода числа, точное значение которого не играет роли (например, элемент управления Slider). Диапазон по умолчанию — от 0 до 100. Однако можно установить ограничения на то, какие номера принимаются с атрибутами `min`, `max` и `step`.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Range Field</h2>
+<p>Depending on browser support:<br>The input type "range" can be displayed as a slider control.</p>
+
+<form action="/action_page.php" method="get">
+    Points:<br>
+    <input type="range" name="points" min="0" max="10">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="range" is not supported in Internet Explorer 9 and earlier versions.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Range Field</h2>
+<p>Depending on browser support:<br>The input type "range" can be displayed as a slider control.</p>
+
+<form action="/action_page.php" method="get">
+    Points:<br>
+    <input type="range" name="points" min="0" max="10">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="range" is not supported in Internet Explorer 9 and earlier versions.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Поле поиска
+`<input type="search">` используется для полей поиска (поле поиска используется как обычное текстовое поле и в зависимости от браузера может сопровождать введённый текст элементом "Очистить содержимое").
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Search Field</h2>
+<p>The <strong>input type="search"</strong> is used for search fields (behaves like a regular text field):</p>
+
+<form action="/action_page.php">
+    Search Google:
+    <input type="search" name="googlesearch">
+    <input type="submit">
+</form>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Search Field</h2>
+<p>The <strong>input type="search"</strong> is used for search fields (behaves like a regular text field):</p>
+
+<form action="/action_page.php">
+    Search Google:
+    <input type="search" name="googlesearch">
+    <input type="submit">
+</form>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Поле номера телефона
+`<input type="tel">` используется для полей ввода, которые должны содержать телефонный номер.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Telephone Field</h2>
+<p>The <strong>input type="tel"</strong> is used for input fields that should contain a telephone number:</p>
+
+<form action="/action_page.php">
+    Telephone:
+    <input type="tel" name="usrtel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="tel" is only supported in Safari 8 and newer versions.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Telephone Field</h2>
+<p>The <strong>input type="tel"</strong> is used for input fields that should contain a telephone number:</p>
+
+<form action="/action_page.php">
+    Telephone:
+    <input type="tel" name="usrtel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="tel" is only supported in Safari 8 and newer versions.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Поле URL-адреса
+`<input type="url">` используется для полей ввода, которые должны содержать URL-адрес.
+
+В зависимости от поддержки браузера поле URL может быть автоматически проверено при отправке.
+
+Некоторые смартфоны распознают тип URL-адреса и добавляют ".com" к клавиатуре для сопоставления ввода URL-адреса.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>URL Field</h2>
+<p>The <strong>input type="url"</strong> is used for input fields that should contain a URL address:</p>
+
+<form action="/action_page.php">
+    Add your homepage:
+    <input type="url" name="homepage">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="url" is not supported in IE9 and earlier versions.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>URL Field</h2>
+<p>The <strong>input type="url"</strong> is used for input fields that should contain a URL address:</p>
+
+<form action="/action_page.php">
+    Add your homepage:
+    <input type="url" name="homepage">
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="url" is not supported in IE9 and earlier versions.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+
+###### Ограничения ввода
+
+| Attribute | Description
+| -- | -- |
+| `checked` | Определяет предвыбранное поле ввода при загрузке страницы (для `type="checkbox"` или `type="radio"`)
+| `disabled` | Указывает, что поле ввода должно быть отключено
+| `max` | `*`Задает максимальное значение для поля ввода
+| `maxlength` | Указывает максимальное число символов для поля ввода
+| `min` | `*`Задает минимальное значение для поля ввода
+| `pattern` | `*`Задает регулярное выражения для проверки входного значения
+| `readonly` | Указывает, что поле ввода предназначено только для чтения (не может быть изменено)
+| `required` | `*`Указывает, что поле ввода является обязательным (должно быть заполнено)
+| `size` | Задает ширину (в символах) поля ввода
+| `step` |  `*`Задает допустимые интервалы чисел для поля ввода
+| `value` | Задает значение по умолчанию для поля ввода
+
+`*` — новый в HTML5.
+
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Numeric Steps</h2>
+<p>Depending on browser support:<br>Fixed steps will apply in the input field.</p>
+
+<form action="/action_page.php">
+    Quantity:<br>
+    <input  type="number" name="quantity"
+            min="0" max="100" step="10" value="30"
+    >
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="number" is not supported in IE9 and earlier.<p>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Numeric Steps</h2>
+<p>Depending on browser support:<br>Fixed steps will apply in the input field.</p>
+
+<form action="/action_page.php">
+    Quantity:<br>
+    <input  type="number" name="quantity"
+            min="0" max="100" step="10" value="30"
+    >
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> type="number" is not supported in IE9 and earlier.<p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+
+##### Элемент `<select>`
+Элемент `<select>` определяет **раскрывающийся список**:
+
+!!! example Пример
+
+```html
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+```
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The select Element</h2>
+<p>The select element defines a drop-down list:</p>
+
+<form action="/action_page.php">
+    <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The select Element</h2>
+<p>The select element defines a drop-down list:</p>
+
+<form action="/action_page.php">
+    <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Выбор значения
+
+Элементы `<option>` определяют параметр, который может быть выбран.
+
+По умолчанию выбирается первый элемент в раскрывающемся списке.
+
+Чтобы определить предварительно выбранный параметр, добавьте атрибут `selected` к параметру:
+
+!!! example Пример
+
+```html
+<option value="fiat">Fiat</option>
+```
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Pre-selected Option</h2>
+<p>You can preselect an option with the selected attribute.</p>
+
+<form action="/action_page.php">
+    <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
+
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Pre-selected Option</h2>
+<p>You can preselect an option with the selected attribute.</p>
+
+<form action="/action_page.php">
+    <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Видимые значения
+Используйте атрибут `size` для указания видимых значений:
+
+!!! example Пример
+
+```html
+<select name="cars" size="3">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+</select>
+```
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Visible Option Values</h2>
+<p>Use the size attribute to specify the number of visible values.</p>
+
+<form action="/action_page.php">
+    <select name="cars" size="3">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
+
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Visible Option Values</h2>
+<p>Use the size attribute to specify the number of visible values.</p>
+
+<form action="/action_page.php">
+    <select name="cars" size="3">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### Разрешить множественный выбор
+Используйте атрибут `multiple`, чтобы позволить пользователю выбрать более одного значения:
+
+!!! example Пример
+
+```html
+<select name="cars" size="4" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option>
+    <option value="audi">Audi</option>
+</select>
+```
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Allow Multiple Selections</h2>
+<p>Use the multiple attribute to allow the user to select more than one value.</p>
+
+<form action="/action_page.php">
+    <select name="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br><br>
+    <input type="submit">
+</form>
+
+<p>Hold down the Ctrl (Windows) / Command (Mac) button to select multiple options.</p>
+
+</body>
+</html>
+
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Allow Multiple Selections</h2>
+<p>Use the multiple attribute to allow the user to select more than one value.</p>
+
+<form action="/action_page.php">
+    <select name="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br><br>
+    <input type="submit">
+</form>
+
+<p>Hold down the Ctrl (Windows) / Command (Mac) button to select multiple options.</p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+##### Элемент `<textarea>`
+`<textarea>` определяет многострочное поле ввода (**область текста**):
+
+!!! example Пример
+
+```html
+<textarea name="message" rows="10" cols="30">
+    Кошка играла в саду.
+</textarea>
+```
+
+Атрибут `rows` указывает видимое число строк в текстовой области.
+
+Атрибут `cols` определяет видимую ширину текстовой области.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Textarea</h2>
+<p>The textarea element defines a multi-line input field.</p>
+
+<form action="/action_page.php">
+    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+    <br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
+
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Textarea</h2>
+<p>The textarea element defines a multi-line input field.</p>
+
+<form action="/action_page.php">
+    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+    <br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+##### Элемент `<button>`
+`<button>` определяет нажатую **кнопку**:
+
+!!! example Пример
+
+```html
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+```
+
+> **Примечание**: Всегда указывайте атрибут **Type** для элемента Button. Различные обозреватели могут использовать различные типы по умолчанию для элемента Button.
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The button Element</h2>
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+</body>
+</html>
+
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The button Element</h2>
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+
+!!! info `<input type='button'>` vs. `<button>`
+
+    Citing the [documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button) as of Oct 2020: While `<input>` elements of type button are still perfectly valid HTML, the newer `<button>` element is now the favored way to create buttons. Given that a `<button>`’s label text is inserted between the opening and closing tags, you can include HTML in the label, even images.[^button-vs-input-type-button-which-to-use]
+
+    [^button-vs-input-type-button-which-to-use]: [button vs. input type="button" -- which to use?](https://stackoverflow.com/questions/469059/button-vs-input-type-button-which-to-use)
+
+    The main difference between `<input type="button">` and `<button>` is that the latter allows for more customization and is more flexible.
+
+    `<input type="button">` is a self-contained element with limited functionality and styling options, while is a container element that can contain other elements and has more styling options such as using CSS pseudo-elements.
+
+    Additionally, `<button>` can have a type attribute other than "button", such as "submit" or "reset", allowing it to be used in a form for submitting or resetting data.[^input-type-button-vs-button-4ffo]
+
+    [^input-type-button-vs-button-4ffo]: [input type button vs button](https://dev.to/hellonehha/input-type-button-vs-button-4ffo)
+
+    The other important difference, besides the ability to add content inside the button element, is the default behavior.
+
+    The input element with a type of button has no default behavior, whereas the button element default behavior is to submit. That is, the button type attribute defaults to submit. This only makes a difference if the button is either using the form attribute (HTML5) set to a form's id or if the button is nested inside a form element.[^what-is-the-difference-between-button-and-input-type-button]
+
+    [^what-is-the-difference-between-button-and-input-type-button]: [What is the difference between button and input type=“button”](https://forum.freecodecamp.org/t/what-is-the-difference-between-button-and-input-type-button/253223/4)
+
+##### Элементы формы HTML5
+В HTML5 добавлены следующие элементы формы:
+- `<datalist>`
+- `<output>`
+
+> **Прммечание**: Обозреватели не отображают неизвестные элементы. Новые элементы, которые не поддерживаются в старых браузерах, не будут "разрушать" вашу веб-страницу.
+
+###### HTML5 `<datalist>` элемент
+Элемент `<datalist>` задает список предварительно определенных параметров для элемента `<input>`.
+
+Пользователи увидят раскрывающийся список предварительно определенных параметров при вводе данных.
+
+Атрибут `list` элемента `<input>` должен ссылаться на `id` атрибут элемента `<datalist>`.
+
+!!! example Пример
+
+```html
+<form action="/action_page.php">
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+</form>
+```
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The datalist Element</h2>
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+<form action="/action_page.php">
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+
+</body>
+</html>
+
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The datalist Element</h2>
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+<form action="/action_page.php">
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+###### HTML5 `<output>` элемент
+Элемент `<output>` представляет результат вычисления (как один, выполняемый сценарием).
+
+!!! example Пример
+
+*Выполнить вычисление и показать результат в элементе `<output>`*:
+
+```html
+<form action="/action_page.php"
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100 +
+    <input type="range" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+</form>
+```
+
+<table style="width: 100%">
+<tr><th>Исходный код</th><th>Отображение</th></tr>
+<tr>
+<td style="width: 50%">
+
+```html
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The datalist Element</h2>
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+<form action="/action_page.php">
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+    <input type="submit">
+</form>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+
+</body>
+</html>
+
+```
+
+</td>
+<td style="width: 50%">
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The output Element</h2>
+<p>The output element represents the result of a calculation.</p>
+
+<form action="/action_page.php"
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50" min="0" max="400">
+    400 +
+    <input type="number" id="b" name="b" value="750">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The output element is not supported in Edge 12 or Internet Explorer and earlier.</p>
+
+</body>
+</html>
+
+</td>
+</tr>
+</table>
+
+#### Атрибуты элементов формы
+
+##### Атрибут `value`
+Атрибут `value` указывает начальное значение для поля ввода:
+
+!!! example Пример
+
+```html
+<form action="">
+    First name:<br>
+    <input type="text" name="firstname" value="John">
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="">
+    First name:<br>
+    <input type="text" name="firstname" value="John">
+</form>
+
+</details>
+
+##### Атрибут `readonly`
+Атрибут `readonly` указывает, что поле ввода только для чтения (не может быть изменено):
+
+!!! example Пример
+
+```html
+<form action="">
+    First name:<br>
+    <input type="text" name="firstname" value="John" readonly>
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="">
+    First name:<br>
+    <input type="text" name="firstname" value="John" readonly>
+</form>
+
+</details>
+
+##### Атрибут `disabled`
+Атрибут `disabled` указывает, что поле ввода отключено.
+
+Отключенное поле ввода непригодно для использования и не может быть нажато, и его значение не будет отправлено при отправке формы:
+
+!!! example Пример
+
+```html
+<form action="">
+    First name:<br>
+    <input type="text" name="firstname" value="John" disabled>
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="">
+    First name:<br>
+    <input type="text" name="firstname" value="John" disabled>
+</form>
+
+</details>
+
+##### Атрибут `size`
+Атрибут `size` определяет размер (в символах) для поля ввода:
+
+!!! example Пример
+
+```html
+<form action="">
+    First name:<br>
+    <input type="text" name="firstname" value="John" size="40">
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="">
+    First name:<br>
+    <input type="text" name="firstname" value="John" size="40">
+</form>
+
+</details>
+
+##### Атрибут `maxlength`
+Атрибут `maxlength` указывает максимальную допустимую длину поля ввода:
+
+!!! example Пример
+
+```html
+<form action="">
+    First name:<br>
+    <input type="text" name="firstname" value="John" maxlength="10">
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="">
+    First name:<br>
+    <input type="text" name="firstname" value="John" maxlength="10">
+</form>
+
+</details>
+
+С атрибутом `maxlength` поле ввода не будет принимать больше допустимого числа символов.
+
+Атрибут `maxlength` не предоставляет никакой обратной связи. Если вы хотите предупредить пользователя, вы должны написать код JavaScript.
+
+> **Примечание**: Ограничения ввода не являются надежными, и JavaScript предоставляет множество способов добавить недопустимый ввод. Чтобы безопасно ограничить вход, он должен быть проверен получателем (сервер)!
+
+#### Атрибуты HTML5
+HTML5 добавил следующие атрибуты для `<input>`:
+
+- `autocomplete`
+- `autofocus`
+- `form`
+- `formaction`
+- `formenctype`
+- `formmethod`
+- `formnovalidate`
+- `formtarget`
+- `height` и `width`
+- `list`
+- `min` и `max`
+- `multiple`
+- `pattern` (regexp)
+- `placholder`
+- `required`
+- `step`
+
+и следующие атрибуты для `<form>`:
+
+- `autocomplete`
+- `novalidate`
+
+##### Атрибут автозаполнения
+Атрибут `autocomplete` указывает, должна ли форма или поле ввода иметь автозаполнение.
+
+Когда автозаполнение включено (`on`), браузер автоматически завершает входные значения, основываясь на значениях, введенных пользователем ранее.
+
+> **Совет**: можно включать (`on`) автозаполнение для формы и отключать (`off`) для определенных полей ввода и наоборот.
+
+Атрибут `autocomplete` работает с `<form>` и следующими типами `<input>`: текстом, поиском, URL, телефоном, электронной почтой, паролем, датой, диапазоном и цветом.
+
+!!! example Пример
+
+*HTML-форма с включенным автозаполнением для всей формы (и отключенным для одного поля ввода)*
+
+```html
+<form action="/action_page.php" autocomplete="on">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    E-mail: <input type="email" name="email" autocomplete="off"><br>
+    <input type="submit">
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="/action_page.php" autocomplete="on">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    E-mail: <input type="email" name="email" autocomplete="off"><br>
+    <input type="submit">
+</form>
+
+</details>
+
+##### Атрибут `novalidate`
+Атрибут `novalidate` является атрибутом `<form>`.
+
+При наличии `novalidate` указывает, что данные формы не должны проверяться при отправке.
+
+!!! example Пример
+
+*Указывает, что форма не проверятся при отправке*
+
+```html
+<form action="/action_page.php" novalidate>
+    E-mail: <input type="email" name="user_email"><br>
+    <input type="submit">
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="/action_page.php" novalidate>
+    E-mail: <input type="email" name="user_email"><br>
+    <input type="submit">
+</form>
+
+</details>
+
+##### Атрибут автофокусировки
+Атрибут `autofocus` указывает, что поле ввода должно автоматически получать фокус при загрузке страницы.
+
+!!! example Пример
+
+*Пусть поле ввода "имя" автоматически получает фокус при загрузке страницы:*
+
+```html
+First name: <input type="text" name="fname" autofocus>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+First name: <input type="text" name="fname" autofocus>
+
+</details>
+
+##### Атрибут формы
+Атрибут `form` указывает одну или несколько форм, к которым принадлежит элемент `<input>`.
+
+> **Совет**: Чтобы ссылаться на более чем одну форму, используйте разделенный пробелами список идентификаторов форм.
+
+!!! example Пример
+
+*Поле ввода, расположенное вне HTML-формы (но при этом являющееся частью формы):*
+
+```html
+<form action="/action_page.php" id="form1">
+    First name: <input type="text" name="fname"><br>
+    <input type="submit" value="Submit">
+</form>
+
+Last name: <input type="text" name="lname" form="form1">
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="/action_page.php" id="form1">
+    First name: <input type="text" name="fname"><br>
+    <input type="submit" value="Submit">
+</form>
+
+Last name: <input type="text" name="lname" form="form1">
+
+</details>
+
+##### Атрибут `formaction`
+Атрибут `formaction` указывает URL-адрес файла, который будет обрабатывать элемент управления вводом при отправке формы.
+
+Атрибут `formaction` переопределяет атрибут `action` элемента `<form>`.
+
+Атрибут `formaction` используется с `type="submit"` и `type="image"`.
+
+!!! example Пример
+
+*HTML-форма с двумя кнопками отправки, с различными действиями*
+
+```html
+<form action="/action_page.php" id="form1">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <input  type="submit" value="Submit">
+    <input  type="submit" value="Submit as admin"
+            formaction="/action_page2.php">
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="/action_page.php" id="form1">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <input  type="submit" value="Submit">
+    <input  type="submit" value="Submit as admin"
+            formaction="/action_page2.php">
+</form>
+
+</details>
+
+##### Атрибут `formenctype`
+Атрибут `formenctype` указывает, как данные формы должны кодироваться при отправке (только для форм с method="Post").
+
+Атрибут `formenctype` переопределяет атрибут Enctype элемента `<form>`.
+
+Атрибут `formenctype` используется с `type="submit"` и `type="image"`.
+
+!!! example Пример
+
+*Отправьте форму-данные, закодированные по умолчанию (первая кнопку Submit), и закодированные как `multipart/form-data` (вторая кнопка Submit):*
+
+```html
+<form action="/action_page.php" method="post">
+    First name: <input type="text" name="fname"><br>
+    <input  type="submit" value="Submit">
+    <input  type="submit" value="Submit as Multipart/form-data"
+            formenctype="multipart/form-data">
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="/action_page.php" method="post">
+    First name: <input type="text" name="fname"><br>
+    <input  type="submit" value="Submit">
+    <input  type="submit" value="Submit as Multipart/form-data"
+            formenctype="multipart/form-data">
+</form>
+
+</details>
+
+##### Атрибут `formmethod`
+Атрибут `formmethod` определяет метод HTTP для отправки данных формы в URL-адрес действия.
+
+Атрибут `formmethod` переопределяет атрибут метода элемента `<form>`.
+
+Атрибут `formmethod` можно использовать с `type="submit"` и `type="image"`.
+
+!!! example Пример
+
+*Вторая кнопка Submit переопределяет метод HTTP формы:*
+
+```html
+<form action="/action_page.php" method="get">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <input  type="submit" value="Submit">
+    <input  type="submit" value="Submit using POST"
+            formmethod="post">
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="/action_page.php" method="get">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <input  type="submit" value="Submit">
+    <input  type="submit" value="Submit using POST"
+            formmethod="post">
+</form>
+
+</details>
+
+##### Атрибут `formnovalidate`
+Атрибут `formnovalidate` переопределяет атрибут `novalidate` элемента `<form>`.
+
+Атрибут `formnovalidate` можно использовать с `type="submit"`.
+
+!!! example Пример
+
+*Форма с двумя кнопками отправки (с проверкой и без проверки)*
+
+```html
+<form action="/action_page.php" method="get">
+    E-mail: <input type="email" name="userid"><br>
+    <input  type="submit" value="Submit">
+    <input  type="submit" value="Submit without validation"
+            formnovalidate>
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="/action_page.php" method="get">
+    E-mail: <input type="email" name="userid"><br>
+    <input  type="submit" value="Submit">
+    <input  type="submit" value="Submit without validation"
+            formnovalidate>
+</form>
+
+</details>
+
+##### Атрибут `formtarget`
+Атрибут `formtarget` указывает имя или ключевое слово, указывающее, где отображать ответ, полученный после отправки формы.
+
+Атрибут `formtarget` переопределяет целевой атрибут элемента `<form>`.
+
+Атрибут `formtarget` можно использовать с `type="submit"` и `type="image"`.
+
+!!! example Пример
+
+*Форма с двумя кнопками отправки, с различными целевыми окнами*
+
+```html
+<form action="/action_page.php">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <input  type="submit" value="Submit as normal">
+    <input  type="submit" value="Submit to a new window"
+            formtarget="_blank">
+</form>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<form action="/action_page.php">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <input  type="submit" value="Submit as normal">
+    <input  type="submit" value="Submit to a new window"
+            formtarget="_blank">
+</form>
+
+</details>
+
+##### Атрибуты Height и Width
+Атрибуты `height` и `width` определяют высоту и ширину элемента `<input type="image">`.
+
+> Всегда указывайте размер изображений. Если браузер не знает размер, страница будет мигать во время загрузки изображений.
+
+!!! example Пример
+
+*Определить изображение как кнопку Submitс атрибутами Height и Width*
+
+```html
+<input type="image" src="img/html-forms.png" alt="Submit" width="400" height="100">
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<input type="image" src="img/html-forms.png" alt="Submit" width="400" height="100">
+
+</details>
+
+##### Атрибут List
+Атрибут `list` ссылается на элемент `<datalist>`, который содержит предварительно определенные параметры для элемента `<input>`.
+
+!!! example Пример
+
+*Элемент `<input>` с заранее определенными значения в `<datalist>`:*
+
+```html
+<input list="browsers">
+
+<datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+</datalist>
+
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<input list="browsers">
+
+<datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+</datalist>
+
+</details>
+
+##### Атрибуты Min и Max
+Атрибуты `min` и `max` определяют минимальное и максимальное значения для элемента `<input>`.
+
+Атрибуты `min` и `max` работают со следующими типами ввода: число, диапазон, дата, локальная дата-время, месяц, время и неделя.
+
+!!! example Пример
+
+*`<input>` элементы с минимальными и максимальными значениями:*
+
+```html
+Enter a date before 1980-01-01:
+<input type="date" name="bday" max="1979-12-31">
+
+Enter a date after 2000-01-01:
+<input type="date" name="bday" min="2000-01-02">
+
+Quantity (between 1 and 5):
+<input type="number" name="quantity" min="1" max="5">
+
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+Enter a date before 1980-01-01:
+<input type="date" name="bday" max="1979-12-31">
+
+Enter a date after 2000-01-01:
+<input type="date" name="bday" min="2000-01-02">
+
+Quantity (between 1 and 5):
+<input type="number" name="quantity" min="1" max="5">
+
+</details>
+
+##### Множественный атрибут
+Атрибут `multiple` указывает, что пользователю разрешено вводить более одного значения в элементе `<input>`.
+
+Атрибут `multiple` работает со следующими типами ввода: электронная почта и файл.
+
+!!! example Пример
+
+*Поле загрузки файла, принимающее несколько значений:*
+
+```html
+Select images: <input type="file" name="img" multiple>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+Select images: <input type="file" name="img" multiple>
+
+</details>
+
+##### Атрибут `pattern`
+Атрибут `pattern` задает регулярное выражение, для которого проверяется значение элемента `<input>`.
+
+Атрибут `pattern` работает со следующими типами ввода: текстом, поиском, URL-адресом, телефоном, электронной почтой и паролем.
+
+> **Совет**: Используйте глобальный атрибут `title` для описания шаблона, чтобы помочь пользователю.
+
+!!! example Пример
+
+*Поле ввода, которое может содержать только три буквы (без цифр или специальных символов):*
+
+```html
+Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+
+</details>
+
+##### Атрибут заполнителя
+Атрибут `placeholder` указывает подсказку, описывающую ожидаемое значение поля ввода (примерное значение или краткое описание формата).
+
+Подсказка отображается в поле ввода перед вводом пользователем значения.
+
+Атрибут `placeholder` работает со следующими типами ввода: текстом, поиском, URL-адресом, телефоном, электронной почтой и паролем.
+
+!!! example Пример
+
+*Поле ввода с замещающим текстом:*
+
+```html
+<input type="text" name="fname" placeholder="First name">
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<input type="text" name="fname" placeholder="First name">
+
+</details>
+
+##### Обязательный атрибут
+Атрибут `required` указывает, что поле ввода должно быть заполнено перед отправкой формы.
+
+Атрибут `required` работает со следующими типами ввода: текст, поиск, URL, телефон, электронная почта, пароль, дата, номер, флажок, радио и файл.
+
+!!! example Пример
+
+*Требуемое поле ввода:*
+
+```html
+Username: <input type="text" name="usrname" required>
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+Username: <input type="text" name="usrname" required>
+
+</details>
+
+##### Атрибут `step`
+Атрибут `step` указывает интервалы допустимых чисел для элемента `<input>`.
+
+_Пример_: Если `step="3"`, то допустимыми числовыми значениями могут быть -3, 0, 3, 6 и т.д.
+
+> **Совет**: Атрибут Step можно использовать вместе с атрибутами `max` и `min` для создания диапазона допустимых значений.
+
+Атрибут `step` работает со следующими типами ввода: число, диапазон, дата, локальная дата-время, месяц, время и неделя.
+
+!!! example Пример
+
+*Поле ввода с указанными интервалами допустимых чисел:*
+
+```html
+<input type="number" name="points" step="3">
+```
+
+<details>
+<summary><em>Отображение</em></summary>
+
+<input type="number" name="points" step="3">
+
+</details>
