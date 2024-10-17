@@ -186,7 +186,7 @@
       - [Атрибут `step`](#атрибут-step)
 
 ## Общее
-65ca1025d048d37352720fb9
+[65ca1025d048d37352720fb9](https://e-learn.petrocollege.ru/course/view.php?id=6974#section-0)
 
 ### Правила оформления работ
 1. [Список заданий, обязательных к выполнению](https://e-learn.petrocollege.ru/mod/checklist/view.php?id=329559), расположен ниже, в соответствующем разделе. **Данный раздел будет пополняться по мере изучения новых тем**
@@ -235,7 +235,7 @@
 23. Внутри папок следует размещать файлы по типам или согласно структуре сайта в отдельных папках. Рисунки — в папке *img*, каскадные таблицы стилей — в папке *css* или *mycss*. Файлы скриптов в соответствующих папках. В идеале — в папке *taskNN* виден файл *index.html* или *index.php* и папки, в которых находятся необходимые для работы сайта другие файлы.
 
 ## Полезное для студента
-66dff8e8d048d37352722109
+[66dff8e8d048d37352722109](https://e-learn.petrocollege.ru/course/view.php?id=6974#section-1)
 
 ### Задания, обязательные к выполнению - список будет пополняться в соответствии с прохождением новых тем
 
@@ -262,7 +262,7 @@
 - [ ] Страницы на Grid
 
 ## Введение
-66e18b07d048d37352722142
+[66e18b07d048d37352722142](https://e-learn.petrocollege.ru/course/view.php?id=6974#section-2)
 
 - [Дока гайд](https://doka.guide/)
 - [Webref](https://webref.ru/)
@@ -2739,7 +2739,7 @@ _Например_:
     ![](./img/task01-ex07.png)
 
 ## Списки и ссылки
-66ebf416d048d3735272220a
+[66ebf416d048d3735272220a](https://e-learn.petrocollege.ru/course/view.php?id=6974#section-3)
 
 ### HTML-списки
 [66ed326bd048d37352722244](https://e-learn.petrocollege.ru/mod/url/view.php?id=325560)
@@ -2871,7 +2871,7 @@ https://e-learn.petrocollege.ru/pluginfile.php/490209/mod_assign/introattachment
 [Пример проекта](https://github.com/bobarikin/emojiFinder)
 
 ## Якорные ссылки
-66f3b3125040133e8429e1e7
+[66f3b3125040133e8429e1e7](https://e-learn.petrocollege.ru/course/view.php?id=6974#section-4)
 
 ### Ссылка-якорь
 [66f4f5565040133e8429e210](https://htmlacademy.ru/courses/305/run/5)
@@ -2908,7 +2908,7 @@ https://e-learn.petrocollege.ru/pluginfile.php/490209/mod_assign/introattachment
 ![](./img/anchors_2.png)
 
 ## Таблицы и формы
-66f4f6bc5040133e8429e212
+[66f4f6bc5040133e8429e212](https://e-learn.petrocollege.ru/course/view.php?id=6974#section-5)
 
 - [Table (Doka guide)](https://doka.guide/html/tables/)
 - [HTML-таблицы](https://html5book.ru/html-table/)
