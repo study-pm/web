@@ -141,6 +141,12 @@ $ winget install --id Git.Git -e --source winget
     </html>
     ```
 
+    > Also you can provide the *README.md* file with tasks descriptions and solutions links.
+
+    ```sh
+    $ touch README.md
+    ```
+
 7. Commit the changes
 
    ```sh
