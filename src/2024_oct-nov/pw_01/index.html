@@ -38,6 +38,30 @@
         document.getElementById("task01").insertAdjacentHTML("beforeend", 
         `<li>a4 = 5 / 3 = <strong>${a4}</strong></li>`);
 
+        let a6 = 5 % 3,
+            a7 = 3 % 5,
+            a8 = 5 + '3',
+            a9 ='5' - 3,
+            a10=75 + 'кг'
+        ;
+
+        const target = document.querySelector('[name="task_02"]').nextElementSibling;
+
+        target.insertAdjacentHTML('beforeend',
+            `<li>a6 = 5 % 3 = <strong>${a6}</strong></li>`);
+
+        target.insertAdjacentHTML('beforeend',
+            `<li>a7 = 3 % 5 = <strong>${a7}</strong></li>`);
+
+        target.insertAdjacentHTML('beforeend',
+            `<li>a8 = 5 + '3' = <strong>${a8}</strong></li>`);
+
+        target.insertAdjacentHTML('beforeend',
+            `<li>a9 = '5' - 3 = <strong>${a9}</strong></li>`);
+
+        target.insertAdjacentHTML('beforeend',
+            `<li>a10 = 75 + 'кг' = <strong>${a10}</strong></li>`);
+
         </script>
 </body>
 </html>
