@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical Work 01</title>
+    <title>Practical Work 01</title>    
 </head>
 <body>
+    <h1>Practical Work 01</h1>
+    <h2 name="task_01">Task 01</h2>
+    <ul id="task01">
+    </ul>
 
+    <h2 name="task_02">Task 02</h2>
+    <ul>
+    </ul>
+
+    <script type="text/javascript">
+
+        let a1 = 5 + 3,
+            a2 = 5 - 3,
+            a3 = 5 * 3,
+            a4 = 5 / 3
+        ;
+        console.log(a1, a2, a3, a4);
+
+        const fragment = document.createDocumentFragment();
+        const li1 = fragment.appendChild(document.createElement("li"));
+        li1.innerHTML = `a1 = 5 + 3 = <strong>${a1}</strong>`;
+        document.getElementById("task01").appendChild(fragment);
+
+        document.getElementById("task01").insertAdjacentHTML("beforeend", 
+        `<li>a2 = 5 - 3 = <strong>${a2}</strong></li>`);
+
+        document.getElementById("task01").insertAdjacentHTML("beforeend", 
+        `<li>a2 = 5 * 3 = <strong>${a3}</strong></li>`);
+
+        document.getElementById("task01").insertAdjacentHTML("beforeend", 
+        `<li>a2 = 5 / 3 = <strong>${a4}</strong></li>`);
+
+        </script>
 </body>
 </html>
