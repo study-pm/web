@@ -3,17 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical Work 01</title>    
+    <title>Practical Work 01</title>
+    <script type="module" src="./js/app.js"></script>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <h1>Practical Work 01</h1>
-    <h2 name="task_01">Task 01</h2>
-    <ul id="task01">
-    </ul>
+    <header></header>
+    <main>
+        <h1>Practical Work 01</h1>
+        <h2 name="task_01">Task 01</h2>
+        <ul id="task01">
+        </ul>
 
-    <h2 name="task_02">Task 02</h2>
-    <ul>
-    </ul>
+        <h2 name="task_02">Task 02</h2>
+        <ul>
+        </ul>
+
+        <h2 name="task_02">Task 02</h2>
+
+        <form name="rectangleForm">
+            <label>
+                <p>Height</p>
+                <input type="number" name="height" required />
+            </label>
+            <label>
+                <p>Width</p>
+                <input type="number" name="width" required />
+            </label>
+            <p class="buttons">
+                <input type="submit" name="submitBtn" value="Area" />
+                <input type="reset" name="resetBtn" value="Clear" />
+            </p>
+            <output name="result" for="height width"></output>
+        </form>
+        </main>
+    <footer>
+        <p>Build with javascript</p>
+    </footer>
 
     <script type="text/javascript">
 
