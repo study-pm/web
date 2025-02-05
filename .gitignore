@@ -4,3 +4,6 @@
 
 # Libs
 node_modules
+
+# Images
+*.ico
