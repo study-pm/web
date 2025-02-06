@@ -12,6 +12,7 @@
     <header></header>
     <main>
         <h1>Practical Work 01</h1>
+
         <h2 name="task_01">Task 01</h2>
         <ul id="task01">
         </ul>
@@ -20,16 +21,15 @@
         <ul>
         </ul>
 
-        <h2 name="task_02">Task 02</h2>
-
-        <form name="rectangleForm">
+        <h2 name="task_03">Task 03</h2>
+        <form name="rectangleForm" method="POST" action="/area">
             <label>
                 <p>Height</p>
-                <input type="number" name="height" required />
+                <input type="number" name="height" step="any" required />
             </label>
             <label>
                 <p>Width</p>
-                <input type="number" name="width" required />
+                <input type="number" name="width" step="any" required />
             </label>
             <p class="buttons">
                 <input type="submit" name="submitBtn" value="Area" />
@@ -37,7 +37,7 @@
             </p>
             <output name="result" for="height width"></output>
         </form>
-        </main>
+    </main>
     <footer>
         <p>Build with ECMAScript</p>
     </footer>
