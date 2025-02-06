@@ -242,6 +242,10 @@
   - [ПР 2 - Верстка интернет магазина](#пр-2---верстка-интернет-магазина)
   - [ПР 3 - NodeJs. Express](#пр-3---nodejs-express)
 - [Январь-Февраль 2025](#январь-февраль-2025)
+  - [Sequelize - Документация](#sequelize---документация)
+    - [Data Modeling](#data-modeling)
+    - [Associations](#associations)
+    - [Soft deletion](#soft-deletion)
 
 ## Общее
 [65ca1025d048d37352720fb9](https://e-learn.petrocollege.ru/course/view.php?id=6974#section-0)
@@ -7675,3 +7679,95 @@ td {
 
 ## Январь-Февраль 2025
 [67a2f6b85040133e8429ede3](https://e-learn.petrocollege.ru/course/view.php?id=6974#section-2)
+
+### Sequelize - Документация
+[67a447925040133e8429ee09](https://e-learn.petrocollege.ru/mod/url/view.php?id=367601)
+
+Sequelize is a modern TypeScript and Node.js ORM for Oracle, Postgres, MySQL, MariaDB, SQLite and SQL Server, and more. Featuring solid transaction support, relations, eager and lazy loading, read replication and more.
+
+[Sequelize](https://sequelize.org/)
+
+1. Install dependencies
+
+    ```sh
+    npm install sequelize sqlite3
+    # or
+    yarn add sequelize sqlite3
+    ```
+
+    [Getting Started](https://sequelize.org/docs/v6/getting-started/)
+
+2. Define models
+
+    ```js
+    import { Sequelize, DataTypes } from 'sequelize';
+
+    const sequelize = new Sequelize('sqlite::memory:');
+    const User = sequelize.define('User', {
+    username: DataTypes.STRING,
+    birthday: DataTypes.DATE,
+    });
+    ```
+
+    [Defining Models](https://sequelize.org/docs/v6/core-concepts/model-basics/)
+
+3. Persist and query
+
+    ```sh
+    const jane = await User.create({
+    username: 'janedoe',
+    birthday: new Date(1980, 6, 20),
+    });
+
+    const users = await User.findAll();
+    ```
+
+    [Querying Models](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/)
+
+#### Data Modeling
+Define your models with ease and make optional use of automatic database synchronization.
+
+```js
+const Wishlist = sequelize.define("Wishlist", {
+  title: DataTypes.STRING,
+});
+const Wish = sequelize.define("Wish", {
+  title: DataTypes.STRING,
+  quantity: DataTypes.NUMBER,
+});
+
+// Automatically create all tables
+await sequelize.sync();
+```
+
+#### Associations
+Define associations between models and let Sequelize handle the heavy lifting.
+
+```js
+Wish.belongsTo(Wishlist);
+Wishlist.hasMany(Wish);
+
+const wishlist = await Wishlist.findOne();
+const wishes = await wishlist.getWishes();
+const wish = await wishlist.createWish({
+  title: 'Toys', quantity: 3,
+});
+
+await wishlist.removeWish(wish);
+```
+
+#### Soft deletion
+Mark data as deleted instead of removing it once and for all from the database.
+
+```js
+const User = sequelize.define("User",
+  { username: DataTypes.STRING },
+  { paranoid: true },
+});
+
+const user = await User.findOne();
+
+await user.destroy();
+await User.findAll(); // non-deleted only
+await User.findAll({ paranoid: false }); // all
+```

@@ -15,3 +15,4 @@
 - [ ] [HTML Academy](https://htmlacademy.ru/courses/305/run/5)
 - [ ] [Table (Doka guide)](https://doka.guide/html/tables/)
 - [ ] [HTML-таблицы](https://html5book.ru/html-table/)
+- [ ] [Sequelize](https://sequelize.org/)
