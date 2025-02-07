@@ -5,7 +5,7 @@ console.log("App");
 document.getElementsByName("rectangleForm")[0].addEventListener("submit", (evt) => {
     evt.preventDefault();
     const res = Math.getRectangleArea(evt.target.height.value, evt.target.width.value);
-    evt.target.result.value = res;
+    evt.target.result.value = "The area is " + res.toFixed(2);
 });
 
 document.rectangleForm.addEventListener("reset", (evt) => {

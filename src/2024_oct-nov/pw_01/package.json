@@ -2,17 +2,21 @@
   "name": "pw_01",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve-front": "live-server",
     "serve-bk": "cp ./css/styles.css php/ && docker run -p 80:80 -v %cd%/php:/app mattrayner/lamp:latest-1804",
-    "serve-back": "cp ./css/styles.css php/ && docker run -p 80:80 -v ${PWD}/php:/app mattrayner/lamp:latest-1804"
+    "serve-back": "cp ./css/styles.css php/ && docker run -p 80:80 -v ${PWD}/php:/app mattrayner/lamp:latest-1804",
+    "serve:php": "docker-compose up",
+    "kill:php": "docker-compose down"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "express": "^4.21.2",
     "live-server": "^1.2.2"
   }
 }

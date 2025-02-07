@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# handle params
+./tools/serve.sh $1
