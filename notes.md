@@ -246,6 +246,7 @@
     - [Data Modeling](#data-modeling)
     - [Associations](#associations)
     - [Soft deletion](#soft-deletion)
+  - [Sequelize - Полезный сайт](#sequelize---полезный-сайт)
 
 ## Общее
 [65ca1025d048d37352720fb9](https://e-learn.petrocollege.ru/course/view.php?id=6974#section-0)
@@ -7771,3 +7772,8 @@ await user.destroy();
 await User.findAll(); // non-deleted only
 await User.findAll({ paranoid: false }); // all
 ```
+
+### Sequelize - Полезный сайт
+[67a44e1d5040133e8429ee0c](https://e-learn.petrocollege.ru/mod/url/view.php?id=367602)
+
+- [ ] [Sequelize](https://metanit.com/web/nodejs/9.1.php)
