@@ -247,6 +247,7 @@
     - [Associations](#associations)
     - [Soft deletion](#soft-deletion)
   - [Sequelize - Полезный сайт](#sequelize---полезный-сайт)
+  - [Sequelize NPM](#sequelize-npm)
 
 ## Общее
 [65ca1025d048d37352720fb9](https://e-learn.petrocollege.ru/course/view.php?id=6974#section-0)
@@ -7777,3 +7778,8 @@ await User.findAll({ paranoid: false }); // all
 [67a44e1d5040133e8429ee0c](https://e-learn.petrocollege.ru/mod/url/view.php?id=367602)
 
 - [ ] [Sequelize](https://metanit.com/web/nodejs/9.1.php)
+
+### Sequelize NPM
+[67a5cb075040133e8429ee51](https://e-learn.petrocollege.ru/mod/url/view.php?id=367603)
+
+- [ ] [sequelize](https://www.npmjs.com/package/sequelize)
