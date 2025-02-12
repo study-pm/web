@@ -6,40 +6,60 @@
     <title>Practical Work 01</title>
     <script type="module" src="./js/app.js"></script>
     <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header></header>
     <main>
-        <h1>Practical Work 01</h1>
+        <aside></aside>
+        <article>
+            <section>
+                <h1>Practical Work 01</h1>
 
-        <h2 name="task_01">Task 01</h2>
-        <ul id="task01">
-        </ul>
+                <h2 name="task_01">Task 01</h2>
+                <ul id="task01">
+                </ul>
 
-        <h2 name="task_02">Task 02</h2>
-        <ul>
-        </ul>
+                <h2 name="task_02">Task 02</h2>
+                <ul>
+                </ul>
 
-        <h2 name="task_03">Task 03</h2>
-        <form name="rectangleForm" method="POST" action="/area">
-            <label>
-                <p>Height</p>
-                <input type="number" name="height" step="any" required />
-            </label>
-            <label>
-                <p>Width</p>
-                <input type="number" name="width" step="any" required />
-            </label>
-            <p class="buttons">
-                <input type="submit" name="submitBtn" value="Area" />
-                <input type="reset" name="resetBtn" value="Clear" />
-            </p>
-            <output name="result" for="height width"></output>
-        </form>
+                <h2 name="task_03">Task 03</h2>
+                <form class="width_narrow" name="rectangle_form" method="POST" action="/area">
+                    <fieldset name="form_in">
+                        <legend>Rectangle Area Calculation</legend>
+                        <label>
+                            <p>Height</p>
+                            <input type="number" name="height" placeholder="must be a valid number"
+                                step="any" required />
+                        </label>
+                        <label>
+                            <p>Width</p>
+                            <input type="number" name="width" placeholder="must be a valid number"
+                                step="any" required />
+                        </label>
+                    </fieldset>
+
+                    <fieldset name="form_ctl" class="buttons">
+                        <input type="submit" name="submitBtn" value="Area" />
+                        <input type="reset" name="resetBtn" value="Clear" />
+                    </fieldset>
+
+                    <fieldset name="form_out" class="border_on type_hidden">
+                        <legend>Result</legend>
+                        <output name="result" for="height width"></output>
+                    </fieldset>
+
+                </form>
+            </section>
+        </article>
+        <aside></aside>
     </main>
     <footer>
-        <p>Build with ECMAScript</p>
+        <p class="font-size_small">Build with ECMAScript</p>
     </footer>
 
     <script type="text/javascript">
