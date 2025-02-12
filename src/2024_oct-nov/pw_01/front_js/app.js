@@ -1,4 +1,4 @@
-import Math from "./math.js"
+import Math from "./js/math.js"
 
 console.log("App");
 

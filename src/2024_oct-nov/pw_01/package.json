@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npm run serve:ls",
-    "serve:ls": "live-server",
-    "serve-bk": "cp ./css/styles.css php/ && docker run -p 80:80 -v %cd%/php:/app mattrayner/lamp:latest-1804",
-    "serve-back": "cp ./css/styles.css php/ && docker run -p 80:80 -v ${PWD}/php:/app mattrayner/lamp:latest-1804",
+    "serve:ls": "cp -r ./css/ ./front_js/ && cp -r ./js/ ./front_js/ && live-server --open=./front_js",
+    "serve:express": "echo Serve Express",
+    "serve:nginx": "echo Serve Nginx",
     "serve:php": "docker-compose up",
     "start": "npm run serve",
-    "kill:php": "docker-compose down"
+    "kill:php": "docker-compose down",
+    "serve-bk": "cp ./css/styles.css php/ && docker run -p 80:80 -v %cd%/php:/app mattrayner/lamp:latest-1804",
+    "serve-back": "cp ./css/styles.css php/ && docker run -p 80:80 -v ${PWD}/php:/app mattrayner/lamp:latest-1804"
   },
   "keywords": [],
   "author": "",
