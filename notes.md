@@ -259,6 +259,8 @@
     - [Soft deletion](#soft-deletion)
   - [Sequelize - Полезный сайт](#sequelize---полезный-сайт)
   - [Sequelize NPM](#sequelize-npm)
+  - [ПР 1 - Создание таблиц и связей](#пр-1---создание-таблиц-и-связей)
+    - [Задание 1 - Связи таблиц Sequelize](#задание-1---связи-таблиц-sequelize)
 
 ## Общее
 [65ca1025d048d37352720fb9](https://e-learn.petrocollege.ru/course/view.php?id=6974#section-0)
@@ -8014,3 +8016,24 @@ await User.findAll({ paranoid: false }); // all
 [67a5cb075040133e8429ee51](https://e-learn.petrocollege.ru/mod/url/view.php?id=367603)
 
 - [ ] [sequelize](https://www.npmjs.com/package/sequelize)
+
+### ПР 1 - Создание таблиц и связей
+[67a995bf5040133e8429ee8c](https://e-learn.petrocollege.ru/mod/assign/view.php?id=367605)
+
+#### Задание 1 - Связи таблиц Sequelize
+Руководство: https://metanit.com/web/nodejs/9.5.php
+
+Задание: Библиотека
+
+1. Создайте три модели: `Author`, `Book` и `Genre`.
+2. Установите связи между моделями: Один автор может написать много книг (один-ко-многим). Одна книга может принадлежать только одному жанру (многие к одному). Один жанр может содержать много книг (один-ко-многим).
+
+    Установка связей в sequelize:
+    - `Author.hasMany(Book, { foreignKey: 'authorId' });`
+    - `Genre.hasMany(Book, { foreignKey: 'genreId' });`
+    - `Book.belongsTo(Author, { foreignKey: 'authorId' });`
+    - `Book.belongsTo(Genre, { foreignKey: 'genreId' });`
+
+3. Создайте страницы к каждой таблице в папке *views*: *books.ejs*, *genres.ejs*, *authors.ejs*.
+
+В ответ на задание прикрепите файл со скриншотами, либо файлы *books.ejs*, *genres.ejs*, *authors.ejs*, *app.js*, *models/index.js*.
