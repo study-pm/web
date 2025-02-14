@@ -246,6 +246,7 @@
         - [6. Надписи к полям формы](#6-надписи-к-полям-формы)
         - [7. Кнопки](#7-кнопки)
         - [8. Флажки и переключатели в формах](#8-флажки-и-переключатели-в-формах)
+  - [Задание 6. Создание форм](#задание-6-создание-форм)
 - [Октябрь-Ноябрь 2024](#октябрь-ноябрь-2024)
   - [ПР 1 - Основы синтаксиса. Операторы](#пр-1---основы-синтаксиса-операторы)
     - [Подготовка](#подготовка)
@@ -7738,6 +7739,78 @@ https://html5book.ru/html5-forms/
 Флажков, в отличие от переключателей, в одной форме может быть установлено несколько. Если для флажков указан атрибут `checked`, то при загрузке станицы на соответствующих полях формы флажки уже будут установлены.
 
 Элемент `<label>` применяется при реализации выбора с помощью переключателей и флажков. Можно выбрать нужный пункт, просто щелкая кнопкой мыши на тексте, связанном с ним. Для этого нужно поместить `<input>` внутрь элемента `<label>`.
+
+### Задание 6. Создание форм
+[67ac3d7a5040133e8429eed4](https://e-learn.petrocollege.ru/mod/assign/view.php?id=325575)
+
+Создать одну из предложенных форм — на выбор студента (студентки).
+
+Создать HTML страницу с формой как на скриншотах.
+
+![Form](./img/forma_.jpg)
+
+![Form](./img/forma_1.jpg)
+
+![Form](./img/forma_2.jpg)
+
+![Form](./img/forma__3.png)
+
+<form>
+    <fieldset>
+        <legend>Контактная информация</legend>
+            <label><p>Имя <em>*</em><input type="text"></p></label>
+            <label>E-mail<input type="email"></label>
+    </fieldset>
+    <p style="margin: 1em 0"><input type="submit" value="Отправить"></p>
+</form>
+
+<form>
+    <fieldset>
+        <legend>Анкета пользователя</legend>
+        <label>
+            <p>
+                Введите имя пользователя
+                <input type="text" placeholder="Например, Елизавета">
+            </p>
+        </label>
+        <label>
+            <p>
+                Введите номер телефона
+                <input type="tel" pattern="^\+?\d{11}$" placeholder="+7 999 123 45 67">
+            </p>
+        </label>
+        <label>
+            <p>Введите email <input type="email"></p>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Ваши предпочтения</legend>
+        <label>
+            <p>Ваш любимый жанр книг</p>
+            <label><input type="radio" name="genre" value="horror"> Ужасы<label>
+            <label><input type="radio" name="genre" value="drama"> Драма<label>
+            <label><input type="radio" name="genre" value="fantasy"> Фентези<label>
+        </label>
+        <label>
+            <p>Выберите автора</p>
+            <select size="3" multiple>
+                <option value="Пушкин">Пушкин</option>
+                <option value="Гоголь">Гоголь</option>
+                <option value="Достоевский">Достоевский</option>
+                <option value="Толстой">Толстой</option>
+            </select>
+        </label>
+        <label>
+            <p>Выберите купон <input type="file"></p>
+        </label>
+        <label>
+            <p>Введите комментарий</p>
+            <textarea rows="5"></textarea>
+        </label>
+        <p><input type="reset" value="Сбросить"></p>
+        <p><input type="submit" value="Отправить"></p>
+    </fieldset>
+</form>
 
 ## Октябрь-Ноябрь 2024
 [67a0dbe95040133e8429edb5](https://e-learn.petrocollege.ru/course/view.php?id=6974#section-1)
