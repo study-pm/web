@@ -1,0 +1,5 @@
+# DB files
+*.sqlite
+
+# Libs and packages
+/node_modules

@@ -62,6 +62,12 @@
                         $result = $calcArea($height, $width);
                         $result = $getArea($height, $width);
                     }
+                    else if(isset($_POST['reset_btn'])) {
+                        $height = "";
+                        $width = "";
+
+                        $result = "";
+                    }
                     else {
                     // Display the Form and the Submit Button
                     }
@@ -95,6 +101,7 @@
                     <fieldset name="form_ctl">
                         <input type="submit" name="submit_btn" value="Area" />
                         <input type="reset" name="reset_btn" value="Clear" />
+                        <!-- <input type="submit" name="reset_btn" value="Clear" formaction="reset.php"> /> -->
                     </fieldset>
 
                     <fieldset name="form_out"

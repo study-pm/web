@@ -1,0 +1,22 @@
+{
+  "name": "sw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "db:init": "node data/init.js",
+    "serve": "node app.js",
+    "start": "npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "sequelize": "^6.37.6",
+    "sqlite3": "^5.1.7"
+  }
+}
